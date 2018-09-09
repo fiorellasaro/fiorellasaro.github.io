@@ -100,3 +100,22 @@ margin-top: 1em;
     height: 2em;
     float: left;
 }
+
+@media (min-width: 768px){
+
+    #linkedin, #github, #gmail{
+        width: 33.3%;
+        margin-left: 33.3%;
+        }
+
+}
+
+
+@media (min-width: 1024px){
+    #linkedin, #github, #gmail{
+        width: 20%;
+        margin-left: 40%;
+        }
+    
+}
+  
