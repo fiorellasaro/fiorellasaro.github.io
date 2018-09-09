@@ -127,7 +127,6 @@ section div div div p{
 }
 
 .projectButton{
-    background-color: rgb(46,133,56, 0.7);
     color: white;
     text-align: center;
     width: 80%;
@@ -138,6 +137,8 @@ section div div div p{
     font-size: 1.2em;
     margin-bottom: 0.5em;
     cursor: pointer;
+    border: 2px solid white;
+    background: none;
 }
 
 .projectButton:focus{
@@ -146,7 +147,7 @@ section div div div p{
 
 
 #projectsButton{
-    margin-top: 7em;
+    margin-top: 8em;
     margin-left: 10%;
 }
 
