@@ -8,17 +8,24 @@ body{
     margin:0;
 }
 
+header{
+    width: 100%;
+    height: 3em;
+}
 
 #burguer{
-    width: 12%;
-    height: 12%;
-    margin-top: 0.5em;
+    width: 2.5em;
+    height: 2.5em;
+    margin-top: 0.5em; 
     margin-left: 0.5em;
+    position: fixed;
 }
 
 #menuContent{
     display: none;
-    margin-left: -2em;
+    margin-left: -3em;
+    margin-top: 3em;
+    z-index: 1;
 }
 
 .menu {
@@ -28,6 +35,7 @@ body{
     font-size: 1em;
     cursor: pointer;
     display: block;
+    padding: 0.5em;
 
 }
 
@@ -43,6 +51,7 @@ header nav ul{
   
 header nav ul li a{
     color: white;
+    font-size: 1.5em;
     text-decoration: none;
 }
 
@@ -51,8 +60,14 @@ main{
     width: 100%;
     height: 30%;
     text-align: center;
+    margin-top: 1em;
 }
 
+main p {
+    font-size: 1.5em;
+    width: 80%;
+    margin-left: 10%;
+}
 
 #logo{
     width: 40%;
@@ -64,10 +79,12 @@ span{
 }
 
 .button{
-    border: 1px solid #2e8538;
+    border: 2px solid #2e8538;
     background: none;
     color: #2e8538;
     border-radius: 2em;
+    width: 80%;
+    font-size: 1.5em;
 }
 
 .button:focus{
@@ -76,16 +93,25 @@ span{
 
 section{
     margin-top: 2em;
-    margin-bottom: 5em;
+    background-color:  #1B2021;
+    height: 600px;
 }
 h2{
     text-align: center;
     margin-bottom: 1em;
+    color: white;
+    margin-top: 1em;
+    padding-top: 0.5em;
 }
 
 .decoration{
     width: 0.6em;
     height: 0.6em;
+}
+
+section div div div p{
+    color: white;
+    text-align: center;
 }
 
 .slide{
@@ -94,24 +120,39 @@ h2{
     height: 250px;
 }
 
-h5{
+#dataImage{
+    width: 100%;
+    height: 200px;
+    margin-left:0; 
+}
+
+.projectButton{
     background-color: rgb(46,133,56, 0.7);
     color: white;
     text-align: center;
     width: 80%;
     margin-left: 10%;
-
+    border-radius: 1em;
+    margin-top: 0.5em;
+    border: none;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    cursor: pointer;
 }
 
-#prev{
-  background-image: url('../img/left-chevron.png');
+.projectButton:focus{
+    outline: none; 
 }
 
-#next{
-    background-image: url('../img/right-chevron.png');
-}
-  
 
+#projectsButton{
+    margin-top: 7em;
+    margin-left: 10%;
+}
+
+#projectsButton:focus{
+    outline: none; 
+}
 
 .contact{
     width: 2em;
@@ -124,7 +165,14 @@ footer{
     text-align: center;
 }
 
+footer a img{
+    margin-top: 0.5em;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+}
+
 #rights{
     margin: 0;
+    font-size: 0.7em;
 }
   
