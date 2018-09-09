@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Signika+Negative');
+
+*{
+    font-family: 'Signika Negative', sans-serif;
+}
+
+body{
+    margin:0;
+}
+
+#burguer{
+    width: 12%;
+    height: 12%;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+}
+
+#menuContent{
+    display: none;
+    margin-left: -2em;
+}
+
+.menu {
+    background-color: black; 
+    border: none;
+    text-align: center;
+    font-size: 1em;
+    cursor: pointer;
+    display: block;
+
+}
+
+header nav{
+    width: 70%;
+    height: 50%;
+    position: fixed;
+  }
+  
+header nav ul{
+    list-style: none;
+}
+  
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+h1{
+    text-align: center;
+}
+
+
+.decoration{
+    width: 0.6em;
+    height: 0.6em;
+}
