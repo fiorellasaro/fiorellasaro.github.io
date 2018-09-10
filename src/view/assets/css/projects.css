@@ -142,3 +142,76 @@ section p{
     overflow: auto;
     margin-bottom: 2em;
 }
+
+
+@media (min-width: 768px){
+
+    section img{
+        width: 28%;
+        margin-left: 36%;
+        height: 300px;
+    }
+
+    .button{
+        width: 33.3%;
+        margin-left: 33.3%;
+    }
+
+    .projectButton{
+        width: 20%;
+    }
+
+    .demo{
+        margin-left: 25%;
+    }
+    
+    .repo{
+        margin-right: 25%;
+    }
+
+    section p{
+        width: 40%;
+        margin-left: 30%;
+    }
+
+    #datadashboardImage{
+        width: 60%;
+        margin-left: 20%;
+    }
+    
+    
+
+}
+
+@media (min-width: 1024px){
+
+    section img{
+        width: 20%;
+        margin-left: 40%;
+        height: 350px;
+    }
+
+    .button{
+        width: 20%;
+        margin-left: 40%;
+    }
+
+    .projectButton{
+        width: 15%;
+    }
+
+    .demo{
+        margin-left: 30%;
+    }
+    
+    .repo{
+        margin-right: 30%;
+    }
+
+    #datadashboardImage{
+        width: 40%;
+        margin-left: 30%;
+        height: 300px;
+    }
+    
+}
