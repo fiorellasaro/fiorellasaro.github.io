@@ -131,9 +131,10 @@ div a:active{
 }
 div a:hover{
     color: #2e8538;
-    transition-duration: 0.7s;
+    transition-duration: 0.2s;
     text-decoration: none;
     text-decoration-style: none;
+    border-bottom: 2px solid #2e8538;
 }
 
 .contactText{
@@ -161,9 +162,89 @@ div a:hover{
 
 @media (min-width: 1024px){
     #linkedin, #github, #gmail{
-        width: 20%;
+        width: 30%;
         margin-left: 40%;
         }
+
+        #burguer{
+            display: none;
+          }
+    
+    
+        .menu{
+            float: left;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            font-size: 1em;
+        
+        }
+        
+        #menuContent{
+            display: inherit !important;
+            width: 40%;
+            height: 100%;
+            margin-top: 0;
+            margin-left: 55%;
+        }
+    
+        header{
+            background: #1B2021;
+            margin: 0;
+            height:3em;
+            width: 100%;
+            margin-top: -1em;
+        }
+    
+        header nav{
+            position: initial;
+          }
+        
+          nav ul{
+            text-align: center;
+          }
+        
+          nav ul li{
+            text-align: center;
+            margin-left: 1.5em;
+            margin-top: 0.3em;
+          
+          }
+          
+        /*   header nav ul li:hover{
+            background-color: #000000;
+          }
+          header nav ul li a:hover{
+            background-color: #000000;
+            color: white !important;
+          } */
+        
+          header nav ul li a:visited{
+            color: white;
+            vertical-align:middle;
+            font-weight: bold;
+          }
+    
+          header nav ul li a:hover{
+            border-bottom:2px solid #2e8538 ;
+            transition-duration: 0.1s;
+            color: #2e8538;
+          }
+    
+    
+       /*    nav ul li a:active:nth-child(1){
+            
+          }
+     */
     
 }
+
+@media (min-width: 1280px){
+
+    #menuContent{
+         width: 35%;
+         margin-left: 65%;
+         
+     }
+ }
   
