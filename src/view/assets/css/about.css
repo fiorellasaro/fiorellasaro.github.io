@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Signika+Negative');
+
+@import url('https://fonts.googleapis.com/css?family=Karla|Spectral');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
 
 *{
-    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Karla', sans-serif;
 }
 
 body{
@@ -64,13 +66,13 @@ header nav ul li a:visited{
 }
 
 header nav ul li a:active{
-    color: #2e8538;
+    color: #4EBA65;
     font-size: 1.5em;
     text-decoration: none;
     text-decoration-style: none;
 }
 header nav ul li a:hover{
-    color: #2e8538;
+    color: #4EBA65;
     transition-duration: 0.7s;
     font-size: 1.5em;
     text-decoration: none;
@@ -80,10 +82,12 @@ header nav ul li a:hover{
 
 h1{
     text-align: center;
+    font-family: 'Poiret One';
+    font-weight: bolder;
 }
 
 .green{
-    color: #2e8538;
+    color: #4EBA65;
 }
 
 .decoration{
@@ -99,6 +103,8 @@ h1{
 
 h2{
  text-align: center;
+ font-family: 'Poiret One';
+ font-weight: bolder;
 }
 
 #linkedin, #github, #gmail{
@@ -125,16 +131,16 @@ div a:visited{
 }
 
 div a:active{
-    color: #2e8538;
+    color: #4EBA65;
     text-decoration: none;
     text-decoration-style: none;
 }
 div a:hover{
-    color: #2e8538;
+    color: #4EBA65;
     transition-duration: 0.2s;
     text-decoration: none;
     text-decoration-style: none;
-    border-bottom: 2px solid #2e8538;
+    border-bottom: 2px solid #4EBA65;
 }
 
 .contactText{
@@ -157,6 +163,18 @@ div a:hover{
         margin-left: 33.3%;
         }
 
+    h1{
+        font-size: 2.5em;
+    }
+
+    h2{
+        font-size: 1.7em;
+    }
+
+    #menuContent{
+        width: 40%;
+    }
+
 }
 
 
@@ -177,12 +195,13 @@ div a:hover{
             border: none;
             background-color: transparent;
             font-size: 1em;
+            margin-top: 0.5em;
         
         }
         
         #menuContent{
             display: inherit !important;
-            width: 40%;
+            width: 45%;
             height: 100%;
             margin-top: 0;
             margin-left: 55%;
@@ -226,9 +245,9 @@ div a:hover{
           }
     
           header nav ul li a:hover{
-            border-bottom:2px solid #2e8538 ;
+            border-bottom:2px solid #4EBA65 ;
             transition-duration: 0.1s;
-            color: #2e8538;
+            color: #4EBA65;
           }
     
     
@@ -236,6 +255,10 @@ div a:hover{
             
           }
      */
+
+     h2{
+        font-size: 2em;
+    }
     
 }
 
