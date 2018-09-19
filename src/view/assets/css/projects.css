@@ -181,6 +181,10 @@ h2{
   padding-top: 2em;
 }
 
+.info-container-w{
+  color: white !important;
+}
+
 .info-text-container{
   float: left;
   width: 45%;
@@ -194,8 +198,8 @@ section div img{
 }
 
 #datadashboardImage{
-    width: 80%;
-    margin-left: 5%;
+    height: 100px;
+    margin-top: 2em;
 }
 
 section div div p{
@@ -216,12 +220,42 @@ section div div p{
 }
 
 
+.contact{
+  width: 2em;
+  height: 2em;
+  margin-top: 0.5em;
+  margin-left: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+#linkedin{
+  margin-left: 0;
+}
+
+footer{
+  background-color: #4EBA65;
+  color: white;
+  text-align: center;
+}
+
+
+#rights{
+  margin: 0;
+  font-size: 0.7em;
+}
+
 @media (min-width: 768px){
 
     section div img{
-        width: 28%;
-        height: 300px;
+        width: 30%;
+        height: 350px;
+        margin-left: 15%;
     }
+
+    .buttons{
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+  }
 
     .button{
         width: 33.3%;
@@ -233,37 +267,59 @@ section div div p{
     }
 
     .demo{
-        margin-left: 25%;
+        margin-left: 20%;
     }
     
     .repo{
-        margin-right: 25%;
+        margin-right: 20%;
     }
 
     section div div p{
-        width: 40%;
-        margin-left: 30%;
-    }
+      font-size: 1.2em;
+      margin: 0;
+    } 
 
     #datadashboardImage{
-        width: 60%;
+        width: 40%;
         margin-left: 10%;
+        margin-right: -5%;
+        height: 200px;
     }
 
     h1{
-        font-size: 2.5em;
+        font-size: 3.5em;
         font-weight: bolder;
     }
 
     h2{
-        font-size: 1.7em;
+        font-size: 2em;
         font-weight: bolder;
+        margin-left: 0;
     }
 
     #menuContent{
         width: 40%;
     }
+
+    .info-text-container{
+      width: 30%;
+      margin-top: 10%;
+      margin-left: 10%;
+    }
     
+  .contact{
+      width: 2.5em;
+      height: 2.5em;
+      margin-top: 1em;
+      margin-left: 1.5em;
+      margin-bottom: 1em;
+  }  
+  
+  
+  #rights{
+      font-size: 0.8em;
+  }
+
     
 
 }
@@ -315,13 +371,7 @@ section div div p{
       
       }
       
-    /*   header nav ul li:hover{
-        background-color: #000000;
-      }
-      header nav ul li a:hover{
-        background-color: #000000;
-        color: white !important;
-      } */
+
     
       header nav ul li a:visited{
         color: white;
@@ -336,39 +386,34 @@ section div div p{
       }
 
 
-   /*    nav ul li a:active:nth-child(1){
-        
-      }
- */
-
 
     section div img{
-        width: 20%;
-        margin-left: 10%;
+        width: 40%;
+        margin-left: 5%;
         height: 350px;
     }
 
     .button{
-        width: 20%;
-        margin-left: 40%;
+        width: 50%;
+        margin-left: 25%;
     }
 
     .projectButton{
-        width: 15%;
+        width: 30%;
     }
 
     .demo{
-        margin-left: 30%;
+        margin-left: 10%;
     }
     
     .repo{
-        margin-right: 30%;
+        margin-right: 10%;
     }
 
     #datadashboardImage{
         width: 40%;
-        margin-left: 10%;
-        height: 300px;
+        margin-left: 5%;
+        height: 200px;
     }
 
     h2{
@@ -379,15 +424,68 @@ section div div p{
     h1{
       margin-top: 0;
     }
+
+    main{
+     overflow: auto;
+    }
+
+    section{
+      width: 50%;
+      float: left;
+    }
+
+    .info-text-container{
+      width: 40%;
+      margin-left: 8%;
+    }
+
+    #datadashboard .info-container{
+      padding-bottom: 100px;
+    } 
+
+    .contact{
+      width: 3em;
+      height: 3em;
+      margin-left: 2.5em;
+  }  
+  
+  
+  #rights{
+      font-size: 0.9em;
+  }
     
 }
 
 
 @media (min-width: 1280px){
 
-    #menuContent{
-         width: 35%;
-         margin-left: 65%;
+  #menuContent{
+    width: 35%;
+    margin-left: 65%;
          
-     }
+  }
+
+  section div img{
+      width: 30%;
+      margin-left: 15%;
+  }
+
+  .info-text-container{
+    width: 30%;
+    margin-left: 15%;
+  }
+
+  .demo{
+    margin-left: 15%;
+  }
+
+ .repo{
+    margin-right: 15%;
  }
+
+ .button{
+  width: 40%;
+  margin-left: 30%;
+}
+
+}

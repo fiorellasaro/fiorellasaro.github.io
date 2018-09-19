@@ -178,7 +178,7 @@ section div div div p{
 }
 
 .projectButton:hover{
-    background-color: #4EBA65
+    background-color: #4EBA65;
     transition-duration: 0.5s; 
 }
 
