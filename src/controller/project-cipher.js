@@ -11,3 +11,9 @@ $('section#caesar').find('button')[0].addEventListener('click', () => {
 $('section#caesar').find('button')[1].addEventListener('click', () => {
 	window.open("https://github.com/fiorellasaro/lim-2018-05-bc-core-am-cipher");
 });
+
+/* let heightSection;
+heightSection = $('#caesar').height(); */
+/* $('.section-b').height(heightSection + 1); */
+/* $('.section').height(heightSection + 1); */
+/* $('.section-w').height(heightSection + 1); */

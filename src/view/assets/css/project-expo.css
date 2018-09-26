@@ -110,6 +110,12 @@ h2{
     font-weight: bolder;
 }
 
+h3{
+    font-size: 1.1em;
+    width: 100%;
+    text-align: center;
+}
+
 .button{
     border: 2px solid #4EBA65;
     background: none;
@@ -203,6 +209,20 @@ section div img{
     float: left;
 }
 
+section div h2{
+    margin:0;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+section div p{
+width: 80%;
+margin:0;
+margin-left: 10%; 
+text-align: justify;
+font-size: 1.2em;
+}
+
 #datadashboardImage{
     height: 100px;
     margin-top: 2em;
@@ -221,9 +241,10 @@ section div div p{
 }
 
 
-#TCR, #foodmap, #datadashboard{
+#TCR, #foodmap, #datadashboard, .section-b{
   background-color: #1B2021;
 }
+
 
 
 .contact{
@@ -284,6 +305,10 @@ footer{
       font-size: 1.2em;
       margin: 0;
     } 
+
+    h3{
+        font-size: 1.5em;
+    }
 
     #datadashboardImage{
         width: 40%;
@@ -435,6 +460,11 @@ footer{
       padding-bottom: 128px;
     }
 
+    h3{
+        font-size: 1.5em;
+    }
+
+
     main{
      overflow: auto;
     }
@@ -470,6 +500,14 @@ footer{
 
   .margin-container{
       margin-left: 10% !important;
+  }
+
+  .section{
+      width: 100%;
+  }
+
+  .section-w{
+    width: 50%;
   }
 }
 
