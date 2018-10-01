@@ -227,27 +227,68 @@ section div div p{
 
 
 .contact{
-  width: 2em;
-  height: 2em;
-  margin-top: 0.5em;
-  margin-left: 1.5em;
-  margin-bottom: 0.5em;
+    width: 2em;
+    height: 2em;
+    float: left;
+    margin-right: 0.5em;
 }
 
-#linkedin{
-  margin-left: 0;
-}
+/* #linkedin{
+    margin-left: 0;
+} */
 
 footer{
-  background-color: #4EBA65;
-  color: white;
-  text-align: center;
+    background-color: #4EBA65;
+    color: white;
+    text-align: center;
+    height: 230px;
+}
+
+.contact-text{
+    margin:0;
+    float: left;
+    cursor: pointer;
+}
+
+
+.contact-text:link{
+    color: #1B2021;
+    text-decoration: none;
+    text-decoration-style: none;
+    font-weight: bolder;
+}
+
+.contact-text:visited{
+    color: #1B2021;
+    text-decoration: none;
+    text-decoration-style: none;
+    font-weight: bolder;
+}
+
+.contact-text:active{
+    color: white;
+    text-decoration: none;
+    text-decoration-style: none;
+}
+.contact-text:hover{
+    color: white;
+    transition-duration: 0.2s;
+    text-decoration: none;
+    text-decoration-style: none;
+    border-bottom: 2px solid white;
+}
+
+.contact-container{
+    overflow: auto;
+    width: 80%;
+    padding-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 10%;
 }
 
 
 #rights{
-  margin: 0;
-  font-size: 0.7em;
+    font-size: 0.7em;
 }
 
 @media (min-width: 768px){
@@ -315,18 +356,38 @@ footer{
       margin-left: 10%;
     }
     
-  .contact{
-      width: 2.5em;
-      height: 2.5em;
-      margin-top: 1em;
-      margin-left: 1.5em;
-      margin-bottom: 1em;
-  }  
-  
-  
-  #rights{
-      font-size: 0.8em;
-  }
+    .contact{
+        width: 2.5em;
+        height: 2.5em;
+    }  
+    
+    
+    #rights{
+        font-size: 0.8em;
+    }
+    
+    /* #linkedin{
+        margin-left: 0;
+    } */
+    
+    footer{
+        height: 310px;
+        padding-top: 1em;
+    }
+
+    footer p {
+        margin: 0;
+    }
+    
+    footer a{
+        font-size: 1.5em;
+    }
+    
+    .contact-container{
+        width: 50%;
+        margin-left: 25%;
+    }
+    
 
     
 
@@ -454,15 +515,34 @@ footer{
     } 
 
     .contact{
-      width: 3em;
-      height: 3em;
-      margin-left: 2.5em;
-  }  
+        width: 3em;
+        height: 3em;
+        margin-left: 2.5em;
+/*         margin-top: 1em;
+       
+        margin-bottom: 1em; */
+    }  
+    
+    
+    #rights{
+        font-size: 0.9em;
+    }
+
+    #phrase{
+        margin-top: 1em;
+        padding-bottom: 0.5em;
+    }
+
   
-  
-  #rights{
-      font-size: 0.9em;
-  }
+    footer{
+        padding-top:2em;
+        height: 370px;
+    }
+
+    footer p {
+        margin-top: 2.5em;
+    }
+
 
   #datadashboard{
     padding-bottom: 113.813px;
@@ -503,6 +583,25 @@ footer{
  .button{
   width: 40%;
   margin-left: 30%;
+}
+
+
+.contact-text{
+    margin-top: 0.5em;
+}
+
+footer{
+    padding-top:3em;
+    height: 380px;
+}
+
+.contact-container{
+    width: 40%;
+    margin-left: 30%;
+}
+
+footer p {
+    margin-top: 3.5em;
 }
 
 }
