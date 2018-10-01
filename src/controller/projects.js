@@ -12,9 +12,9 @@ $(document).ready( () => {
     window.open("https://github.com/fiorellasaro/lim-2018-01-ux-marketplace");
   });
 
-  $('section#TCR').find('button')[2].addEventListener('click', () => {
+/*   $('section#TCR').find('button')[2].addEventListener('click', () => {
     window.location.href = "project-market-place.html";
-  });
+  }); */
 
 
 
@@ -27,10 +27,10 @@ $(document).ready( () => {
     window.open("https://github.com/fiorellasaro/proyecto-final-common-core");
   });
 
-  $('section#comunal').find('button')[2].addEventListener('click', () => {
+/*   $('section#comunal').find('button')[2].addEventListener('click', () => {
     window.location.href = "project-guest-registration.html";
   });
-
+ */
 
 
   $('section#foodmap').find('button')[0].addEventListener('click', () => {
@@ -40,10 +40,10 @@ $(document).ready( () => {
   $('section#foodmap').find('button')[1].addEventListener('click', () => {
     window.open("https://github.com/fiorellasaro/lim-2018-01-foodmap");
   });
-  $('section#foodmap').find('button')[2].addEventListener('click', () => {
+/*   $('section#foodmap').find('button')[2].addEventListener('click', () => {
     window.location.href = "project-foodmap.html";
   });
-
+ */
 
 
 
@@ -55,10 +55,10 @@ $(document).ready( () => {
     window.open("https://github.com/fiorellasaro/lim-2018-05-bc-core-am-socialnetwork");
   });
 
-  $('section#socialNetwork').find('button')[2].addEventListener('click', () => {
+/*   $('section#socialNetwork').find('button')[2].addEventListener('click', () => {
     window.location.href = "project-social-network.html";
   });
-
+ */
 
 
 
@@ -70,10 +70,10 @@ $(document).ready( () => {
     window.open("https://github.com/fiorellasaro/lim-2018-05-bc-core-am-datadashboard");
   });
 
-  $('section#datadashboard').find('button')[2].addEventListener('click', () => {
+/*   $('section#datadashboard').find('button')[2].addEventListener('click', () => {
     window.location.href = "project-datadashboard.html";
   });
-
+ */
 
   $('section#caesar').find('button')[0].addEventListener('click', () => {
     window.open("https://fiorellasaro.github.io/lim-2018-05-bc-core-am-cipher/src/");
@@ -82,7 +82,7 @@ $(document).ready( () => {
   $('section#caesar').find('button')[1].addEventListener('click', () => {
     window.open("https://github.com/fiorellasaro/lim-2018-05-bc-core-am-cipher");
   });
-
+/* 
   $('section#caesar').find('button')[2].addEventListener('click', () => {
     window.location.href = "project-cipher.html";
-  });
+  }); */
