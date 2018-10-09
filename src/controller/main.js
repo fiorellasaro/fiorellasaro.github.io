@@ -13,4 +13,36 @@ document.getElementById('projectsButton').addEventListener('click', () => {
  }); 
 
 
- 
+
+ document.getElementById('linkedinIcon').addEventListener('mouseover', () => {
+
+  document.getElementById('linkedinIcon').src= "view/assets/img/linkedin-w.png";
+
+}); 
+
+ document.getElementById('linkedinIcon').addEventListener('mouseout', () => {
+
+  document.getElementById('linkedinIcon').src= "view/assets/img/linkedin.png";
+}); 
+
+document.getElementById('mailIcon').addEventListener('mouseover', () => {
+
+  document.getElementById('mailIcon').src= "view/assets/img/gmail-w.png";
+
+}); 
+
+document.getElementById('mailIcon').addEventListener('mouseout', () => {
+
+  document.getElementById('mailIcon').src= "view/assets/img/gmail.png";
+}); 
+
+document.getElementById('githubIcon').addEventListener('mouseover', () => {
+
+  document.getElementById('githubIcon').src= "view/assets/img/github-sign-w.png";
+
+}); 
+
+document.getElementById('githubIcon').addEventListener('mouseout', () => {
+
+  document.getElementById('githubIcon').src= "view/assets/img/github-sign.png";
+}); 

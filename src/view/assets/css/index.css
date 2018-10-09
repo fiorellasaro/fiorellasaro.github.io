@@ -226,13 +226,15 @@ footer{
     background-color: #4EBA65;
     color: white;
     text-align: center;
-    height: 230px;
+/*     height: 230px; */
 }
 
 .contact-text{
     margin:0;
     float: left;
     cursor: pointer;
+    margin-left: 0.5em;
+    margin-top: 0.2em;
 }
 
 
@@ -265,15 +267,16 @@ footer{
 
 .contact-container{
     overflow: auto;
-    width: 90%;
+    width: 80%;
     padding-top: 1em;
     margin-bottom: 1em;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 
 #rights{
     font-size: 0.7em;
+    margin-bottom: 0;
 }
 
 
@@ -371,18 +374,22 @@ footer{
         margin-left: 0;
     } */
     
-    footer{
+/*     footer{
         height: 330px;
         padding-top: 1em;
-    }
+    } */
     
     footer a{
         font-size: 1.5em;
     }
     
     .contact-container{
-        width: 50%;
-        margin-left: 25%;
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .contact-text{
+        margin-top: 0.4em;
     }
     
 
@@ -507,9 +514,9 @@ footer{
     }
 
     .contact{
-        width: 3em;
-        height: 3em;
-        margin-left: 2.5em;
+        width: 2em;
+        height: 2em;
+/*         margin-left: 2.5em; */
 /*         margin-top: 1em;
        
         margin-bottom: 1em; */
@@ -518,6 +525,7 @@ footer{
     
     #rights{
         font-size: 0.9em;
+        margin-top: 3em;
     }
 
     #phrase{
@@ -525,11 +533,26 @@ footer{
         padding-bottom: 0.5em;
     }
 
-    footer{
+/*     footer{
         padding-top:2em;
         height: 380px;
+    } */
+
+    .contact-container{
+        float: left;
+        width: 30%;
+        margin-left: 1em;
     }
 
+    footer a {
+        font-size: 1em;
+    }
+
+    #contact-info{
+        overflow: auto;
+        margin-left: 10%;
+        padding-top: 2em;
+    }
 
 }
 
@@ -563,16 +586,16 @@ footer{
     }
 
     .contact-text{
-        margin-top: 0.5em;
+        margin-top: 0.3em;
     }
 
-    footer{
+/*     footer{
         padding-top:3em;
         height: 400px;
     }
-
-    .contact-container{
+ */
+  /*   .contact-container{
         width: 40%;
         margin-left: 30%;
-    }
+    } */
 }

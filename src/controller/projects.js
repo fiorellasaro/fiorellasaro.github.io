@@ -62,27 +62,63 @@ $(document).ready( () => {
 
 
 
-  $('section#datadashboard').find('button')[0].addEventListener('click', () => {
+/*   $('section#datadashboard').find('button')[0].addEventListener('click', () => {
     window.open("https://fiorellasaro.github.io/lim-2018-05-bc-core-am-datadashboard/src/");
   });
 
   $('section#datadashboard').find('button')[1].addEventListener('click', () => {
     window.open("https://github.com/fiorellasaro/lim-2018-05-bc-core-am-datadashboard");
-  });
+  }); */
 
 /*   $('section#datadashboard').find('button')[2].addEventListener('click', () => {
     window.location.href = "project-datadashboard.html";
   });
  */
 
-  $('section#caesar').find('button')[0].addEventListener('click', () => {
+/*   $('section#caesar').find('button')[0].addEventListener('click', () => {
     window.open("https://fiorellasaro.github.io/lim-2018-05-bc-core-am-cipher/src/");
   });
 
   $('section#caesar').find('button')[1].addEventListener('click', () => {
     window.open("https://github.com/fiorellasaro/lim-2018-05-bc-core-am-cipher");
-  });
+  }); */
 /* 
   $('section#caesar').find('button')[2].addEventListener('click', () => {
     window.location.href = "project-cipher.html";
   }); */
+
+
+  document.getElementById('linkedinIcon').addEventListener('mouseover', () => {
+
+    document.getElementById('linkedinIcon').src= "assets/img/linkedin-w.png";
+  
+  }); 
+  
+  document.getElementById('linkedinIcon').addEventListener('mouseout', () => {
+  
+    document.getElementById('linkedinIcon').src= "assets/img/linkedin.png";
+  }); 
+  
+  document.getElementById('mailIcon').addEventListener('mouseover', () => {
+  
+    document.getElementById('mailIcon').src= "assets/img/gmail-w.png";
+  
+  }); 
+  
+  document.getElementById('mailIcon').addEventListener('mouseout', () => {
+  
+    document.getElementById('mailIcon').src= "assets/img/gmail.png";
+  }); 
+  
+  document.getElementById('githubIcon').addEventListener('mouseover', () => {
+  
+    document.getElementById('githubIcon').src= "assets/img/github-sign-w.png";
+  
+  }); 
+  
+  document.getElementById('githubIcon').addEventListener('mouseout', () => {
+  
+    document.getElementById('githubIcon').src= "assets/img/github-sign.png";
+  }); 
+  
+  

@@ -173,18 +173,18 @@ h2{
 
 .demo{
     float: left;
-    margin-left: 1.5em;
+    margin-left: 1em;
 }
 
 .repo{
     float: right;
-    margin-right: 1.5em;
+    margin-right: 1em;
 }
 
 .info-container{
   overflow: auto;
   width: 100%;
-  padding-top: 2em;
+  padding-top: 3em;
 }
 
 .info-container-w{
@@ -218,6 +218,7 @@ section div div p{
 
 .buttons{
     overflow: auto;
+    padding-bottom: 2em;
 }
 
 
@@ -231,6 +232,11 @@ section div div p{
     height: 2em;
     float: left;
     margin-right: 0.5em;
+    fill: #1B2021;
+}
+
+.contact:hover{
+    fill: white;
 }
 
 /* #linkedin{
@@ -241,13 +247,14 @@ footer{
     background-color: #4EBA65;
     color: white;
     text-align: center;
-    height: 230px;
 }
 
 .contact-text{
     margin:0;
     float: left;
     cursor: pointer;
+    margin-left: 0.5em;
+    margin-top: 0.2em;
 }
 
 
@@ -280,15 +287,16 @@ footer{
 
 .contact-container{
     overflow: auto;
-    width: 90%;
+    width: 80%;
     padding-top: 1em;
     margin-bottom: 1em;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 
 #rights{
     font-size: 0.7em;
+    margin-bottom: 0;
 }
 
 @media (min-width: 768px){
@@ -301,7 +309,7 @@ footer{
 
     .buttons{
       margin-top: 1em;
-      margin-bottom: 0.5em;
+      padding-bottom: 2em;
   }
 
     .button{
@@ -336,8 +344,6 @@ footer{
     h1{
         font-size: 3.5em;
         font-weight: bolder;
-        padding-top: 146px;
-        padding-bottom: 146px;
     }
 
     h2{
@@ -370,22 +376,26 @@ footer{
         margin-left: 0;
     } */
     
-    footer{
+/*     footer{
         height: 310px;
         padding-top: 1em;
     }
-
-    footer p {
+ */
+ /*    footer p {
         margin: 0;
-    }
+    } */
     
     footer a{
         font-size: 1.5em;
     }
     
     .contact-container{
-        width: 50%;
-        margin-left: 25%;
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .contact-text{
+        margin-top: 0.4em;
     }
     
 
@@ -492,8 +502,6 @@ footer{
 
     h1{
       margin-top: 0;
-      padding-top: 128px;
-      padding-bottom: 128px;
     }
 
     main{
@@ -514,10 +522,12 @@ footer{
       padding-bottom: 100px;
     } 
 
+
+    
     .contact{
-        width: 3em;
-        height: 3em;
-        margin-left: 2.5em;
+        width: 2em;
+        height: 2em;
+/*         margin-left: 2.5em; */
 /*         margin-top: 1em;
        
         margin-bottom: 1em; */
@@ -526,6 +536,7 @@ footer{
     
     #rights{
         font-size: 0.9em;
+        margin-top: 3em;
     }
 
     #phrase{
@@ -533,24 +544,33 @@ footer{
         padding-bottom: 0.5em;
     }
 
-  
-    footer{
+/*     footer{
         padding-top:2em;
-        height: 370px;
+        height: 380px;
+    } */
+
+    .contact-container{
+        float: left;
+        width: 30%;
+        margin-left: 1em;
     }
 
-    footer p {
-        margin-top: 2.5em;
+    footer a {
+        font-size: 1em;
+        
     }
-
-
-  #datadashboard{
-    padding-bottom: 113.813px;
-  }
 
   .margin-container{
       margin-left: 10% !important;
   }
+
+  #contact-info{
+    overflow: auto;
+    margin-left: 10%;
+    padding-top: 2em;
+  }
+
+
 }
 
 
@@ -587,18 +607,18 @@ footer{
 
 
 .contact-text{
-    margin-top: 0.5em;
+    margin-top: 0.3em;
 }
 
-footer{
+/* footer{
     padding-top:3em;
     height: 380px;
-}
+} */
 
-.contact-container{
+/* .contact-container{
     width: 40%;
     margin-left: 30%;
-}
+} */
 
 footer p {
     margin-top: 3.5em;

@@ -85,6 +85,7 @@ h1{
     font-family: 'Poiret One';
     font-weight: bolder;
     font-size: 2em;
+    margin-top: 0;
 }
 
 .green{
@@ -107,6 +108,8 @@ h2{
  text-align: center;
  font-family: 'Poiret One';
  font-weight: bolder;
+ margin: 0;
+ margin-bottom: 1em;
 }
 
 #linkedin, #github, #gmail{
@@ -243,14 +246,11 @@ cursor: pointer;
   color: #4EBA65 !important;
   border: 2px solid #4EBA65 !important;
 }
-
-#CV, #contact{
-    height: 250px;
+/* 
+#CV, #contact, #soft, #tech{
+    height: 60% !important;
 }
-
-#soft, #tech{
-    height: 300px;
-}
+ */
 
 .skills{
     width: 33.3%;
@@ -264,6 +264,9 @@ section div p{
     margin-left: 5%;
     text-align: center;
     margin-top: 0.5em;
+}
+section{
+    padding-bottom: 50px;
 }
 
 
@@ -298,14 +301,6 @@ section div p{
         margin-left: 33.3%;
     }
 
-    #CV, #contact{
-    height: 370px;
-    }
-
-     #soft, #tech{
-        height: 440px;
-    }
-
     .skills{
         width: 25%;
         height: 25%;
@@ -327,6 +322,10 @@ section div p{
         width: 10%;
         height: 10%;
     }
+.info-container{
+    padding-top: 50px;
+}
+
 }
 
 
@@ -415,17 +414,13 @@ section div p{
         font-size: 2.5em;
     }
 
-    #CV, #contact{
+    #CV, #contact,#soft, #tech{
         width: 50%;
         float: left;
-        height: 380px;
+        height: 30vh !important;
     }
 
-     #soft, #tech{
-        width: 50%;
-        float: left;
-        height: 420px;
-    }
+   
     
 }
 
@@ -440,9 +435,13 @@ section div p{
     #linkedin, #github, #gmail{
         margin-left: 25%;
     } 
-     
-     #soft, #tech{
-        height: 440px;
+
+  /*   #CV, #contact,#soft, #tech{
+        height: 35vh;
+    } */
+
+    #CV, #contact,#soft, #tech{
+        height: 60vh !important;
     }
  }
   
