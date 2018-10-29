@@ -61,27 +61,31 @@ $(document).ready( () => {
  */
 
 
+$('section#fintech').find('button')[0].addEventListener('click', () => {
+  window.open("https://marvelapp.com/5j3hbj9/screen/48644047");
+});
 
-/*   $('section#datadashboard').find('button')[0].addEventListener('click', () => {
-    window.open("https://fiorellasaro.github.io/lim-2018-05-bc-core-am-datadashboard/src/");
-  });
+$('section#fintech').find('button')[1].addEventListener('click', () => {
+  window.open("https://github.com/fiorellasaro/lim-2018-01-ux-financial-app");
+}); 
 
-  $('section#datadashboard').find('button')[1].addEventListener('click', () => {
-    window.open("https://github.com/fiorellasaro/lim-2018-05-bc-core-am-datadashboard");
-  }); */
+$('section#amable').find('button')[0].addEventListener('click', () => {
+  window.open("https://marvelapp.com/7cgi3h6/screen/49583954");
+});
 
-/*   $('section#datadashboard').find('button')[2].addEventListener('click', () => {
-    window.location.href = "project-datadashboard.html";
+$('section#amable').find('button')[1].addEventListener('click', () => {
+  window.open("https://github.com/fiorellasaro/lim-2018-01-ux-web-amable");
+}); 
+
+
+/*  */
+
+/*   $('section#fintech').find('button')[2].addEventListener('click', () => {
+    window.location.href = "project-fintech.html";
   });
  */
 
-/*   $('section#caesar').find('button')[0].addEventListener('click', () => {
-    window.open("https://fiorellasaro.github.io/lim-2018-05-bc-core-am-cipher/src/");
-  });
-
-  $('section#caesar').find('button')[1].addEventListener('click', () => {
-    window.open("https://github.com/fiorellasaro/lim-2018-05-bc-core-am-cipher");
-  }); */
+/*  */
 /* 
   $('section#caesar').find('button')[2].addEventListener('click', () => {
     window.location.href = "project-cipher.html";
