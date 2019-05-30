@@ -51,11 +51,11 @@ document.getElementById('githubIcon').addEventListener('mouseout', () => {
 
 
 document.getElementById('cv-image').addEventListener('click', () => {
-  window.open('../view/assets/CV Fiorella Sánchez Rodríguez.pdf','_blank');
+    window.open('../view/assets/CV Fiorella Sánchez Rodríguez - ES.pdf','_blank');
 }); 
 
 document.getElementById('button').addEventListener('click', () => {
-  window.open('../view/assets/CV Fiorella Sánchez Rodríguez.pdf','_blank');
+    window.open('../view/assets/CV Fiorella Sánchez Rodríguez - ES.pdf','_blank');
 }); 
 
 

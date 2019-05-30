@@ -97,8 +97,8 @@ h1{
     height: 0.6em;
 }
 
-#about{
- width: 80%;
+.about{
+ width: 60%;
  margin-left: 10%;
  text-align: justify;
  font-family: 'Poiret One';
@@ -171,12 +171,21 @@ div a:hover{
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: #4EBA65;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
  /*    background-image: url('../img/what-is-ux-design-.png');
     background-size: 100%; */
 }
 
+#about-content{
+    display: flex;
+    /*width: 60%;*/
+    flex-direction:column;
+}
 
-#CV, #soft{
+
+#CV, #soft {
     background-color: #1B2021;
 }
 
@@ -286,9 +295,9 @@ section{
     }
 
  
-    #about{
-        width: 50%;
-        margin-left: 25%;
+    .about{
+        width: 60%;
+        margin-left: 20%;
         font-size: 1.5em;
     }
 
