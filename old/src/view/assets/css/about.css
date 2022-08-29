@@ -1,0 +1,456 @@
+
+@import url('https://fonts.googleapis.com/css?family=Karla|Spectral');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+*{
+    font-family: 'Karla', sans-serif;
+}
+
+body{
+    margin:0;
+}
+
+header{
+    width: 100%;
+    height: 3em;
+}
+
+#burguer{
+    width: 2.5em;
+    height: 2.5em;
+    margin-top: 0.5em; 
+    margin-left: 0.5em;
+    position: fixed;
+}
+
+#menuContent{
+    display: none;
+    margin-left: -3em;
+    margin-top: 3em;
+    z-index: 1;
+}
+
+.menu {
+    background-color: black; 
+    border: none;
+    text-align: center;
+    font-size: 1em;
+    cursor: pointer;
+    display: block;
+    padding: 0.5em;
+
+}
+
+header nav{
+    width: 70%;
+    height: 50%;
+    position: fixed;
+  }
+  
+header nav ul{
+    list-style: none;
+}
+  
+header nav ul li a:link{
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-decoration-style: none;
+}
+
+header nav ul li a:visited{
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-decoration-style: none;
+}
+
+header nav ul li a:active{
+    color: #4EBA65;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-decoration-style: none;
+}
+header nav ul li a:hover{
+    color: #4EBA65;
+    transition-duration: 0.7s;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-decoration-style: none;
+}
+
+
+h1{
+    text-align: center;
+    font-family: 'Poiret One';
+    font-weight: bolder;
+    font-size: 2em;
+    margin-top: 0;
+}
+
+.green{
+    color: #4EBA65;
+}
+
+.decoration{
+    width: 0.6em;
+    height: 0.6em;
+}
+
+.about{
+ width: 60%;
+ margin-left: 10%;
+ text-align: justify;
+ font-family: 'Poiret One';
+}
+
+h2{
+ text-align: center;
+ font-family: 'Poiret One';
+ font-weight: bolder;
+ margin: 0;
+ margin-bottom: 1em;
+}
+
+#linkedin, #github, #gmail{
+overflow: auto;
+width: 80%;
+margin-left: 10%;
+margin-top: 1em;
+}
+
+div a{
+    cursor: pointer;
+}
+
+div a:link{
+    color: black;
+    text-decoration: none;
+    text-decoration-style: none;
+}
+
+div a:visited{
+    color: black;
+    text-decoration: none;
+    text-decoration-style: none;
+}
+
+div a:active{
+    color: #4EBA65;
+    text-decoration: none;
+    text-decoration-style: none;
+}
+div a:hover{
+    color: #4EBA65;
+    transition-duration: 0.2s;
+    text-decoration: none;
+    text-decoration-style: none;
+    border-bottom: 2px solid #4EBA65;
+}
+
+.contactText{
+  float: left;
+  font-size: 1em;
+  margin-top: 0.4em;
+}
+
+.contact{
+    width: 2em;
+    height: 2em;
+    float: left;
+    margin-right: 0.5em;
+}
+
+
+
+#description{
+    text-align: center;
+    margin:0;
+    font-family: 'Poiret One';
+    font-weight: bolder;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #4EBA65;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ /*    background-image: url('../img/what-is-ux-design-.png');
+    background-size: 100%; */
+}
+
+#about-content{
+    display: flex;
+    /*width: 60%;*/
+    flex-direction:column;
+}
+
+
+#CV, #soft {
+    background-color: #1B2021;
+}
+
+/* #CV, #contact, #soft, #tech{
+    height: 250px;
+}
+ */
+#cv-image{
+width: 25%;
+height: 25%;
+margin-left: 37.5%;
+cursor: pointer;
+
+}
+
+
+
+.info-container{
+    overflow: auto;
+    width: 100%;
+    padding-top: 2em;
+}
+  
+  .info-container-w{
+    color: white !important;
+  }
+
+  .buttons{
+      overflow: auto;
+  }
+
+  .projectButton{
+    color: #1B2021;
+    text-align: center;
+    width: 50%;
+    border-radius: 1em;
+    margin-top: 0.5em;
+    border: none;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+    border: 2px solid #1B2021;
+    background: none;
+    margin-left: 25%;
+}
+
+.projectButton:focus, #cv-image:focus{
+    outline: none; 
+}
+
+
+
+.projectButton:hover{
+    background-color: #1B2021;
+    color:  #4EBA65;
+    border: 2px solid #4EBA65;
+    transition-duration: 0.5s; 
+}
+
+.project-button-w{
+  color: white !important;
+  border: 2px solid white !important;
+}
+
+.project-button-w:hover{
+  background-color: white !important;
+  color: #4EBA65 !important;
+  border: 2px solid #4EBA65 !important;
+}
+/* 
+#CV, #contact, #soft, #tech{
+    height: 60% !important;
+}
+ */
+
+.skills{
+    width: 33.3%;
+    height: 33.3%;
+    margin-left: 33.3%;
+}
+
+section div p{
+    margin: 0;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+    margin-top: 0.5em;
+}
+section{
+    padding-bottom: 50px;
+}
+
+
+@media (min-width: 768px){
+
+    #linkedin, #github, #gmail{
+        width: 50%;
+        margin-left: 25%;
+        }
+
+    h1{
+        font-size: 3em;
+    }
+
+    h2{
+        font-size: 2em;
+    }
+
+ 
+    .about{
+        width: 60%;
+        margin-left: 20%;
+        font-size: 1.5em;
+    }
+
+    #menuContent{
+        width: 40%;
+    }  
+    
+    .projectButton{
+        width: 33.3%;
+        margin-left: 33.3%;
+    }
+
+    .skills{
+        width: 25%;
+        height: 25%;
+        margin-left: 37.5%;
+    }
+    
+    section div p{
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 1em;
+        font-size: 1.3em;
+    }
+
+    .contactText{
+        font-size: 1.5em;
+    }
+
+    .contact{
+        width: 10%;
+        height: 10%;
+    }
+.info-container{
+    padding-top: 50px;
+}
+
+}
+
+
+@media (min-width: 1024px){
+    #linkedin, #github, #gmail{
+        width: 70%;
+        margin-left: 15%;
+    }
+
+        #burguer{
+            display: none;
+          }
+    
+    
+        .menu{
+            float: left;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            font-size: 1em;
+            margin-top: 0.5em;
+        
+        }
+        
+        #menuContent{
+            display: inherit !important;
+            width: 45%;
+            height: 100%;
+            margin-top: 0;
+            margin-left: 55%;
+        }
+    
+        header{
+            background: #1B2021;
+            margin: 0;
+            height:3em;
+            width: 100%;
+            margin-top: -1em;
+        }
+    
+        header nav{
+            position: initial;
+          }
+        
+          nav ul{
+            text-align: center;
+          }
+        
+          nav ul li{
+            text-align: center;
+            margin-left: 1.5em;
+            margin-top: 0.3em;
+          
+          }
+          
+        /*   header nav ul li:hover{
+            background-color: #000000;
+          }
+          header nav ul li a:hover{
+            background-color: #000000;
+            color: white !important;
+          } */
+        
+          header nav ul li a:visited{
+            color: white;
+            vertical-align:middle;
+            font-weight: bold;
+          }
+    
+          header nav ul li a:hover{
+            border-bottom:2px solid #4EBA65 ;
+            transition-duration: 0.1s;
+            color: #4EBA65;
+          }
+    
+    
+       /*    nav ul li a:active:nth-child(1){
+            
+          }
+     */
+    h1{
+        font-size: 3.5em;
+    }
+
+     h2{
+        font-size: 2.5em;
+    }
+
+    #CV, #contact,#soft, #tech{
+        width: 50%;
+        float: left;
+        height: 30vh !important;
+    }
+
+   
+    
+}
+
+@media (min-width: 1280px){
+
+    #menuContent{
+         width: 35%;
+         margin-left: 65%;
+         
+     }
+
+    #linkedin, #github, #gmail{
+        margin-left: 25%;
+    } 
+
+  /*   #CV, #contact,#soft, #tech{
+        height: 35vh;
+    } */
+
+    #CV, #contact,#soft, #tech{
+        height: 60vh !important;
+    }
+ }
+  
