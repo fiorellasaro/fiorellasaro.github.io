@@ -7,7 +7,8 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "ci": "yarn install --frozen-lockfile"
   },
   "dependencies": {
     "next": "12.2.5",
