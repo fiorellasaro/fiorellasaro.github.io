@@ -56,7 +56,7 @@ const Home: NextPage = () => {
           >
             Projects
           </h2>
-          <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '30px'}}>
+          <div className=" flex-col md:flex-row flex items-center justify-center gap-4">
             <a
               href="https://zentangle.io/"
               target="_blank"
@@ -77,6 +77,13 @@ const Home: NextPage = () => {
               style={{ textDecoration: "underline", fontSize: "25px" }}
             >
               Mujeres Músicas
+            </a>
+            <a
+              href="https://placerescompulsivos.pe/"
+              target="_blank"
+              style={{ textDecoration: "underline", fontSize: "25px" }}
+            >
+              Placeres compulsivos
             </a>
           </div>
         </div>
