@@ -1,2 +1,25 @@
-node_modules
-.next
+# Node modules
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Local env files
+.env*
+!.env.example
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+
+# Editor settings
+.vscode/
+.idea/
+
+# Optional: Mac system files
+*.swp
