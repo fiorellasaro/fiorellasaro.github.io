@@ -50,9 +50,9 @@ export default function ProjectPage({ project }: Props) {
           <Image
             src={project.imageUrl}
             alt={project.title}
-            width={1200}
-            height={600}
-            className="w-full h-auto object-contain"
+            width={300}
+            height={300}
+            className="max-w-80 max-h-80 w-full h-auto m-auto object-contain"
           />
         ) : (
           <div className="w-full aspect-video bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-neutral-400">
