@@ -1,8 +1,12 @@
+import { GetStaticPaths, GetStaticProps } from "next";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { projects } from "data/projects";
-import ProjectCardSummary from "components/ProjectCardSummary";
+import { ProjectData } from "@components/ProjectCard";
+import Link from "next/link";
+import ProjectCardSummary from "@components/ProjectCardSummary";
 
-export default function ProjectsPage() {
+export default function ProjectPage() {
   return (
     <motion.section
       className="space-y-12 max-w-6xl mx-auto mt-12 px-6"

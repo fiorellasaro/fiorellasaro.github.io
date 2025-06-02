@@ -1,18 +1,14 @@
-import { useRouter } from "next/router";
-
+import { GetStaticPaths, GetStaticProps } from "next";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 import { projects } from "data/projects";
+import { ProjectData } from "@components/ProjectCard";
 
-export default function ProjectPage() {
-  const { query } = useRouter();
-  const slug = query.slug as string;
-  const project = projects[slug];
+interface Props {
+  project: ProjectData;
+}
 
-  if (!project)
-    return <div className="text-center py-20">Project not found.</div>;
-
+export default function ProjectPage({ project }: Props) {
   return (
     <motion.section
       className="max-w-5xl mx-auto py-12 px-6 space-y-10"
@@ -81,7 +77,6 @@ export default function ProjectPage() {
 
       {/* Content split */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        {/* Contributions */}
         <div>
           <h3 className="text-xl font-semibold text-[#4EBA65] mb-2">
             Key Contributions
@@ -92,8 +87,6 @@ export default function ProjectPage() {
             ))}
           </ul>
         </div>
-
-        {/* Impact */}
         <div>
           <h3 className="text-xl font-semibold text-[#4EBA65] mb-2">Impact</h3>
           <ul className="list-disc list-inside space-y-1 text-sm text-neutral-600 dark:text-neutral-300">
@@ -123,3 +116,24 @@ export default function ProjectPage() {
     </motion.section>
   );
 }
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const paths = Object.keys(projects).map((slug) => ({
+    params: { slug },
+  }));
+  return {
+    paths,
+    fallback: false,
+  };
+};
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const slug = params?.slug as string;
+  const project = projects[slug];
+
+  if (!project) return { notFound: true };
+
+  return {
+    props: { project },
+  };
+};
