@@ -22,12 +22,19 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "yarn"
 
-      - run: yarn ci
-      - run: yarn run build
-      - run: yarn run export
-      - run: touch ./out/.nojekyll
+      - name: Install dependencies
+        run: yarn ci
 
-      # (opcional) Si tienes dominio personalizado
+      - name: Build site
+        run: yarn build
+
+      - name: Export static site
+        run: yarn export
+
+      - name: Add .nojekyll
+        run: touch ./out/.nojekyll
+
+      # (opcional) Dominio personalizado para GitHub Pages
       # - run: echo 'fiorellasaro.com' > ./out/CNAME
 
       - name: Deploy 🚀
