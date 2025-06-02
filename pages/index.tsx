@@ -1,95 +1,76 @@
-import React, { useRef } from "react";
-import type { NextPage } from "next";
-import Head from "next/head";
+import ProjectCard from "@components/ProjectCard";
+import ProjectCardPreview from "@components/ProjectCardPreview";
+import { projects } from "data/projects";
+import { motion } from "framer-motion";
+import Link from "next/link";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import ThreeScene from "../components/ThreeScene";
-import { Stars } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
-import { Color } from "three";
 
-const Home: NextPage = () => {
-  const sceneRef = useRef<THREE.Scene>(null);
+export default function HomePage() {
+  const previewProjects = ["hesafin", "bloinx", "redi"];
+
   return (
-    <div style={{ width: "100vw", height: "100vh", position: "relative" }}>
-      <ThreeScene>
-        <Stars
-          ref={sceneRef}
-          radius={30}
-          depth={50}
-          count={15000}
-          factor={4}
-          saturation={0}
-          fade
-        />
-      </ThreeScene>
-      <div
-        style={{
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          color: "white",
-          zIndex: 1,
-          textAlign: "center",
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-        <div>
-          <h1
-            className="animated-content"
-            style={{ color: "white", fontWeight: "bolder", fontSize: "35px" }}
-          >
+    <div className="space-y-24">
+      {/* Hero */}
+      <section className="flex flex-col items-center text-center space-y-6 mt-20 px-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="max-w-3xl"
+        >
+          {/* Avatar placeholder */}
+          <div className="w-36 h-36 rounded-full overflow-hidden shadow-lg mx-auto mb-6 border-2 border-[#4EBA65]">
+            <Image
+              src="/assets/avatarYo.svg"
+              alt="Avatar of Fiorella"
+              width={144}
+              height={144}
+              className="w-full h-full object-cover object-top"
+            />
+          </div>
+
+          {/* Name + Role */}
+          <h1 className="text-5xl md:text-6xl font-bold leading-tight tracking-tight">
             Fiorella Sánchez
           </h1>
-          <h2
-            style={{ color: "white", fontWeight: "bolder", fontSize: "25px" }}
-          >
-            Frontend Developer | 3D Developer
+          <h2 className="text-xl md:text-2xl font-medium text-[#4EBA65] tracking-wide">
+            Senior Front-End & Web3 Developer
           </h2>
-        </div>
-        <div style={{ marginTop: "150px" }}>
-          <h2
-            className="animated-content"
-            style={{ color: "white", fontWeight: "bolder", fontSize: "30px" }}
-          >
-            Projects
-          </h2>
-          <div className=" flex-col md:flex-row flex items-center justify-center gap-4">
-            <a
-              href="https://zentangle.io/"
-              target="_blank"
-              style={{ textDecoration: "underline", fontSize: "25px" }}
+
+          {/* Description */}
+          <p className="mt-6 text-lg text-neutral-600 dark:text-neutral-300 leading-relaxed">
+            Building intuitive, scalable web experiences across blockchain
+            ecosystems and offline-first architectures. Currently focused on
+            real-world impact, performance and creative interfaces.
+          </p>
+
+          {/* CTA Button */}
+          <div className="mt-16 flex justify-center">
+            <Link
+              href="/projects"
+              className="inline-block px-10 py-5 text-xl font-bold bg-[#4EBA65] text-white rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 tracking-wide"
             >
-              Zentangle
-            </a>
-            <a
-              href="https://bloinx.io/"
-              target="_blank"
-              style={{ textDecoration: "underline", fontSize: "25px" }}
-            >
-              Bloinx
-            </a>
-            <a
-              href="https://mujeresmusicas.aguaflorida.pe/"
-              target="_blank"
-              style={{ textDecoration: "underline", fontSize: "25px" }}
-            >
-              Mujeres Músicas
-            </a>
-            <a
-              href="https://placerescompulsivos.pe/"
-              target="_blank"
-              style={{ textDecoration: "underline", fontSize: "25px" }}
-            >
-              Placeres compulsivos
-            </a>
+              View My Projects →
+            </Link>
           </div>
+        </motion.div>
+      </section>
+
+      {/* Preview Projects */}
+      <section>
+        <h3 className="text-2xl font-semibold mb-8 text-center">
+          Featured Projects
+        </h3>
+        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          {previewProjects.map((slug) => (
+            <ProjectCardPreview
+              key={slug}
+              slug={slug}
+              project={projects[slug]}
+            />
+          ))}
         </div>
-      </div>
+      </section>
     </div>
   );
-};
-
-export default Home;
+}
